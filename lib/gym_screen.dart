@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'gym_leader_team_screen.dart';
+
 class GymScreen extends StatefulWidget {
   const GymScreen({super.key});
 
@@ -9,6 +11,17 @@ class GymScreen extends StatefulWidget {
 
 class _GymScreenState extends State<GymScreen> {
   int currentIndex = 4;
+
+  final List<String> gymNames = [ 
+    'Roark', 
+    'Gardenia', 
+    'Maylene', 
+    'Crasher Wake', 
+    'Fantina', 
+    'Byron', 
+    'Candice', 
+    'Volkner', 
+  ];
 
   final List<String> gymBadges = [
     'assets/roark_badge.png',
@@ -32,7 +45,7 @@ class _GymScreenState extends State<GymScreen> {
             const SizedBox(height: 20),
 
             const Text(
-              'GYM LEADERS',
+              'Sinnoh Gym\nLeaders',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Color(0xFF124A49),
@@ -60,8 +73,17 @@ class _GymScreenState extends State<GymScreen> {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                        // Team preview will be added later.
-                      },
+                        if (index == 0) {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GymLeaderTeamScreen(
+                            leaderName: gymNames[index],
+                          ),
+                        ),
+                      );
+                    }
+                  },
                       child: Container(
                         decoration: BoxDecoration(
                           color: const Color(0xFFE7993E),
@@ -82,19 +104,24 @@ class _GymScreenState extends State<GymScreen> {
                 ),
               ),
             ),
+          ],
+        ),
+      ),
 
-            BottomNavigationBar(
-              currentIndex: currentIndex,
-              onTap: (index) {
-                setState(() {
-                  currentIndex = index;
-                });
-              },
-              type: BottomNavigationBarType.fixed,
-              selectedItemColor: const Color(0xFF124A49),
-              unselectedItemColor: const Color(0xFF124A49),
-              backgroundColor: const Color(0xFF97C1E6),
-              items: const [
+      // Navigation bar is outside the body
+      // so it fills the entire bottom area.
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
+        onTap: (index) {
+          if (index == 2) {
+            Navigator.pop(context);
+          }
+        },
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: const Color(0xFF124A49),
+        unselectedItemColor: const Color(0xFF124A49),
+        backgroundColor: const Color(0xFF97C1E6),
+        items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.emoji_events),
                 label: 'League',
@@ -114,11 +141,8 @@ class _GymScreenState extends State<GymScreen> {
               BottomNavigationBarItem(
                 icon: Icon(Icons.shield),
                 label: 'Gyms',
-                ),
-              ],
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
