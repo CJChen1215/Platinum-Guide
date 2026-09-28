@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'gym_screen.dart';
 
+import 'pokemon_league_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -40,20 +42,38 @@ class _HomeScreenState extends State<HomeScreen> {
 
           BottomNavigationBar(
             currentIndex: currentIndex,
-            onTap: (index) {
-              if (index == 4) {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const GymScreen(),
-                  ),
-                );
-              } else {
-                setState(() {
-                  currentIndex = index;
-                });
-              }
-            },
+              onTap: (index) { 
+                if (index == 0) { 
+                  Navigator.push( 
+                    context, MaterialPageRoute( 
+                      builder: (context) => const LeagueScreen(), 
+                      ), 
+                    ); 
+                  } 
+                  //else if (index == 1) { 
+                 // Navigator.push( 
+                   // context, MaterialPageRoute( 
+                     // builder: (context) => const StarterScreen(), 
+                     // ), 
+                   // ); 
+                  //} 
+                  else if (index == 2) { 
+                    // Already on Home 
+                  } //else if (index == 3) { 
+                  //Navigator.push( 
+                    //context, MaterialPageRoute( 
+                     // builder: (context) => const LegendaryScreen(), 
+                     // ), 
+                   // ); 
+                 //} 
+                  else if (index == 4) { 
+                  Navigator.push( 
+                    context, MaterialPageRoute( 
+                      builder: (context) => const GymScreen(), 
+                      ), 
+                    ); 
+                  } 
+                },
             type: BottomNavigationBarType.fixed,
             selectedItemColor: const Color(0xFF124A49),
             unselectedItemColor: const Color(0xFF124A49),

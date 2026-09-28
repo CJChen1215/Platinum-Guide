@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'gym_leader_team_screen.dart';
 
+import 'pokemon_league_screen.dart';
+
+
 class GymScreen extends StatefulWidget {
   const GymScreen({super.key});
 
@@ -15,9 +18,9 @@ class _GymScreenState extends State<GymScreen> {
   final List<String> gymNames = [ 
     'Roark', 
     'Gardenia', 
+    'Fantina', 
     'Maylene', 
     'Crasher Wake', 
-    'Fantina', 
     'Byron', 
     'Candice', 
     'Volkner', 
@@ -26,9 +29,9 @@ class _GymScreenState extends State<GymScreen> {
   final List<String> gymBadges = [
     'assets/roark_badge.png',
     'assets/gardenia_badge.png',
+    'assets/fantina_badge.png',
     'assets/maylene_badge.png',
     'assets/wake_badge.png',
-    'assets/fantina_badge.png',
     'assets/byron_badge.png',
     'assets/candice_badge.png',
     'assets/volkner_badge.png',
@@ -82,6 +85,15 @@ class _GymScreenState extends State<GymScreen> {
                           ),
                         ),
                       );
+                    } if (index == 1) {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GymLeaderTeamScreen(
+                            leaderName: gymNames[index],
+                          ),
+                        ),
+                      );
                     }
                   },
                       child: Container(
@@ -108,15 +120,35 @@ class _GymScreenState extends State<GymScreen> {
         ),
       ),
 
-      // Navigation bar is outside the body
-      // so it fills the entire bottom area.
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentIndex,
-        onTap: (index) {
-          if (index == 2) {
-            Navigator.pop(context);
-          }
-        },
+        currentIndex: 4, 
+          onTap: (index) { 
+            if (index == 0) { 
+              Navigator.push( 
+                context, MaterialPageRoute( 
+                  builder: (context) => const LeagueScreen(), 
+                  ), 
+                ); 
+              } 
+              //else if (index == 1) {
+              //Navigator.push( 
+               // context, MaterialPageRoute( 
+                 // builder: (context) => const StarterScreen(), 
+                //  ), 
+               // ); 
+              //} 
+              else if (index == 2) { 
+                Navigator.pop(context); 
+              } 
+              //else if (index == 3) { 
+               // Navigator.push( context, MaterialPageRoute( 
+                 // builder: (context) => const LegendaryScreen(), 
+                 // ), 
+               // );
+             // } 
+              else if (index == 4) { 
+              } 
+            },
         type: BottomNavigationBarType.fixed,
         selectedItemColor: const Color(0xFF124A49),
         unselectedItemColor: const Color(0xFF124A49),

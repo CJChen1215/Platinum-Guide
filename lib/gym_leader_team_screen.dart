@@ -46,48 +46,79 @@ class GymLeaderTeamScreen extends StatelessWidget {
       ],
     },
 
-    // These will be filled in when you provide
-    // the designs/details for the other Gym Leaders.
-
     'Gardenia': {
       'type': 'GRASS TYPE',
-      'leaderImage': 'assets/images/gym_leaders/gardenia.png',
+      'leaderImage': 'assets/gardenia.png',
+      'pokemon': [
+        {
+          'name': 'Turtwig',
+          'level': 'Lv. 20',
+          'image': 'assets/turtwig.png',
+          'moves': [
+            'Grass Knot',
+            'Razor Leaf',
+            'Sunny Day',
+            'Reflect',
+          ],
+        },
+        {
+          'name': 'Cherrim',
+          'level': 'Lv. 20',
+          'image': 'assets/cherrim.png',
+          'moves': [
+            'Grass Knot',
+            'Leech Seed',
+            'Magical Leaf',
+            'Safeguard',
+          ],
+        },
+        {
+          'name': 'Roserade',
+          'level': 'Lv. 22',
+          'image': 'assets/roserade.png',
+          'moves': [
+            'Grass Knot',
+            'Poison Sting',
+            'Magical Leaf',
+            'Stun Spore',
+          ],
+        },
+      ],
+    },
+
+    'Fantina': {
+      'type': 'GHOST TYPE',
+      'leaderImage': 'assets/fantina.png',
       'pokemon': [],
     },
 
     'Maylene': {
       'type': 'FIGHTING TYPE',
-      'leaderImage': 'assets/images/gym_leaders/maylene.png',
+      'leaderImage': 'assets/maylene.png',
       'pokemon': [],
     },
 
     'Crasher Wake': {
       'type': 'WATER TYPE',
-      'leaderImage': 'assets/images/gym_leaders/wake.png',
-      'pokemon': [],
-    },
-
-    'Fantina': {
-      'type': 'GHOST TYPE',
-      'leaderImage': 'assets/images/gym_leaders/fantina.png',
+      'leaderImage': 'assets/crasher_wake.png',
       'pokemon': [],
     },
 
     'Byron': {
       'type': 'STEEL TYPE',
-      'leaderImage': 'assets/images/gym_leaders/byron.png',
+      'leaderImage': 'assets/byron.png',
       'pokemon': [],
     },
 
     'Candice': {
       'type': 'ICE TYPE',
-      'leaderImage': 'assets/images/gym_leaders/candice.png',
+      'leaderImage': 'assets/candice.png',
       'pokemon': [],
     },
 
     'Volkner': {
       'type': 'ELECTRIC TYPE',
-      'leaderImage': 'assets/images/gym_leaders/volkner.png',
+      'leaderImage': 'assets/volkner.png',
       'pokemon': [],
     },
   };
@@ -107,25 +138,21 @@ class GymLeaderTeamScreen extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-
           child: Column(
             children: [
               Expanded(
                 child: Container(
                   width: double.infinity,
-
                   decoration: BoxDecoration(
-                    color: const Color(0xFF9D6B60),
+                    color: const Color.fromARGB(255, 190, 187, 176),
                     border: Border.all(
                       color: Colors.black,
                       width: 2,
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-
                   child: Padding(
                     padding: const EdgeInsets.all(10),
-
                     child: leader == null
                         ? const Center(
                             child: Text(
@@ -146,7 +173,6 @@ class GymLeaderTeamScreen extends StatelessWidget {
                                   fit: BoxFit.contain,
                                 ),
                               ),
-
                               // Gym Leader name and type
                               Text(
                                 '${leaderName.toUpperCase()}\n'
@@ -159,9 +185,7 @@ class GymLeaderTeamScreen extends StatelessWidget {
                                   height: 1.0,
                                 ),
                               ),
-
                               const SizedBox(height: 8),
-
                               // Pokémon team
                               Expanded(
                                 flex: 6,
@@ -183,7 +207,6 @@ class GymLeaderTeamScreen extends StatelessWidget {
                                         itemBuilder: (context, index) {
                                           final pokemon =
                                               leader['pokemon'][index];
-
                                           return Expanded(
                                             child: Row(
                                               children: [
@@ -195,7 +218,6 @@ class GymLeaderTeamScreen extends StatelessWidget {
                                                     fit: BoxFit.contain,
                                                   ),
                                                 ),
-
                                                 // Pokémon information
                                                 Expanded(
                                                   flex: 3,
