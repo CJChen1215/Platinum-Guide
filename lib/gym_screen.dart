@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'home_screen.dart';
 import 'gym_leader_team_screen.dart';
-
+import 'starter_screen.dart';
 import 'pokemon_league_screen.dart';
 
 
@@ -85,7 +86,61 @@ class _GymScreenState extends State<GymScreen> {
                           ),
                         ),
                       );
-                    } if (index == 1) {
+                    } else if (index == 1) {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GymLeaderTeamScreen(
+                            leaderName: gymNames[index],
+                          ),
+                        ),
+                      );
+                    } else if (index == 2) {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GymLeaderTeamScreen(
+                            leaderName: gymNames[index],
+                          ),
+                        ),
+                      );
+                    } else if (index == 3) {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GymLeaderTeamScreen(
+                            leaderName: gymNames[index],
+                          ),
+                        ),
+                      );
+                    } else if (index == 4) {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GymLeaderTeamScreen(
+                            leaderName: gymNames[index],
+                          ),
+                        ),
+                      );
+                    } else if (index == 5) {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GymLeaderTeamScreen(
+                            leaderName: gymNames[index],
+                          ),
+                        ),
+                      );
+                    } else if (index == 6) {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GymLeaderTeamScreen(
+                            leaderName: gymNames[index],
+                          ),
+                        ),
+                      );
+                    } else if (index == 7) {
                         Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -129,25 +184,25 @@ class _GymScreenState extends State<GymScreen> {
                   builder: (context) => const LeagueScreen(), 
                   ), 
                 ); 
-              } 
-              //else if (index == 1) {
-              //Navigator.push( 
+              } //else if (index == 1) {
+             // Navigator.push( 
                // context, MaterialPageRoute( 
-                 // builder: (context) => const StarterScreen(), 
-                //  ), 
-               // ); 
-              //} 
-              else if (index == 2) { 
-                Navigator.pop(context); 
-              } 
-              //else if (index == 3) { 
-               // Navigator.push( context, MaterialPageRoute( 
-                 // builder: (context) => const LegendaryScreen(), 
-                 // ), 
-               // );
+                //  builder: (context) => const LegendaryScreen(), 
+                // ), 
+                //); 
              // } 
-              else if (index == 4) { 
-              } 
+              else if (index == 2) { 
+                Navigator.push(context, MaterialPageRoute( 
+                  builder: (context) => const HomeScreen(), 
+                  ), 
+                ); 
+              } else if (index == 3) { 
+              Navigator.push( context, MaterialPageRoute( 
+                builder: (context) => const StarterScreen(), 
+                ), 
+              );
+              } else if (index == 4) { 
+                } 
             },
         type: BottomNavigationBarType.fixed,
         selectedItemColor: const Color(0xFF124A49),

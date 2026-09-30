@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'gym_screen.dart';
-
+import 'starter_screen.dart';
 import 'pokemon_league_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -51,21 +51,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     ); 
                   } 
                   //else if (index == 1) { 
-                 // Navigator.push( 
-                   // context, MaterialPageRoute( 
-                     // builder: (context) => const StarterScreen(), 
-                     // ), 
-                   // ); 
-                  //} 
-                  else if (index == 2) { 
-                    // Already on Home 
-                  } //else if (index == 3) { 
                   //Navigator.push( 
                     //context, MaterialPageRoute( 
-                     // builder: (context) => const LegendaryScreen(), 
-                     // ), 
+                    //  builder: (context) => const LegendaryScreen(), 
+                    //  ), 
                    // ); 
-                 //} 
+                 // } 
+                    else if (index == 2) { 
+                    // Already on Home 
+                  } else if (index == 3) { 
+                  Navigator.push( 
+                    context, MaterialPageRoute( 
+                     builder: (context) => const StarterScreen(), 
+                      ), 
+                   ); 
+                 } 
                   else if (index == 4) { 
                   Navigator.push( 
                     context, MaterialPageRoute( 

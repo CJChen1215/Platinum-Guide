@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'home_screen.dart';
 import 'gym_screen.dart';
+import 'starter_screen.dart';
 
 class LeagueScreen extends StatefulWidget {
   const LeagueScreen({super.key});
@@ -88,24 +90,27 @@ class _LeagueScreenState extends State<LeagueScreen> {
           onTap: (index) { 
             if (index == 0) { 
             } 
-            //else if (index == 1) { 
-              //Navigator.push( 
-                //context, MaterialPageRoute( 
-                 // builder: (context) => const StarterScreen(), 
-                //  ), 
-               // ); 
-             // } 
-             else if (index == 2) { 
-                Navigator.pop(context); 
-              } 
-              //else if (index == 3) {
+            //else if (index == 1) {
                 //Navigator.push( 
                  // context, MaterialPageRoute( 
                   //  builder: (context) => const LegendaryScreen(), 
                   //  ), 
                  // ); 
                // } 
-                else if (index == 4) { 
+              else if (index == 2) { 
+                Navigator.push( 
+                  context, MaterialPageRoute( 
+                    builder: (context) => const HomeScreen(), 
+                    ), 
+                  ); 
+                } else if (index == 3) {
+              } else if (index == 3) { 
+              Navigator.push( 
+                context, MaterialPageRoute( 
+                  builder: (context) => const StarterScreen(), 
+                 ), 
+               ); 
+             } else if (index == 4) { 
                   Navigator.push( 
                     context, MaterialPageRoute( 
                       builder: (context) => const GymScreen(), 

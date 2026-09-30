@@ -89,37 +89,263 @@ class GymLeaderTeamScreen extends StatelessWidget {
     'Fantina': {
       'type': 'GHOST TYPE',
       'leaderImage': 'assets/fantina.png',
-      'pokemon': [],
+      'pokemon': [
+        {
+          'name': 'Duskull',
+          'level': 'Lv. 24',
+          'image': 'assets/duskull.png',
+          'moves': [
+            'Shadow Sneak',
+            'Will-O-Wisp',
+            'Pursuit',
+            'Future Sight',
+          ],
+        },
+        {
+          'name': 'Haunter',
+          'level': 'Lv. 24',
+          'image': 'assets/haunter.png',
+          'moves': [
+            'Confuse Ray',
+            'Shadow Claw',
+            'Sucker Punch',
+            'Hypnosis',
+          ],
+        },
+        {
+          'name': 'Mismagius',
+          'level': 'Lv. 26',
+          'image': 'assets/mismagius.png',
+          'moves': [
+            'Psybeam',
+            'Confuse Ray',
+            'Shadow Ball',
+            'Magical Leaf',
+          ],
+        }
+      ],
     },
 
     'Maylene': {
       'type': 'FIGHTING TYPE',
       'leaderImage': 'assets/maylene.png',
-      'pokemon': [],
+      'pokemon': [
+        {
+          'name': 'Meditite',
+          'level': 'Lv. 28',
+          'image': 'assets/meditite.png',
+          'moves': [
+            'Confusion',
+            'Fake Out',
+            'Rock Tomb',
+            'Drain Punch',
+          ],
+        },
+        {
+          'name': 'Machoke',
+          'level': 'Lv. 29',
+          'image': 'assets/machoke.png',
+          'moves': [
+            'Karate Chop',
+            'Focus Energy',
+            'Strength',
+            'Rock Tomb',
+          ],
+        },
+        {
+          'name': 'Lucario',
+          'level': 'Lv. 32',
+          'image': 'assets/lucario.png',
+          'moves': [
+            'Drain Punch',
+            'Force Palm',
+            'Metal Claw',
+            'Bone Rush',
+          ],
+        }
+      ],
     },
 
     'Crasher Wake': {
       'type': 'WATER TYPE',
-      'leaderImage': 'assets/crasher_wake.png',
-      'pokemon': [],
+      'leaderImage': 'assets/wake.png',
+      'pokemon': [
+        {
+          'name': 'Gyarados',
+          'level': 'Lv. 33',
+          'image': 'assets/gyarados.png',
+          'moves': [
+            'Brine',
+            'Waterfall',
+            'Twister',
+            'Bite',
+          ],
+        },
+        {
+          'name': 'Quagsire',
+          'level': 'Lv. 34',
+          'image': 'assets/quagsire.png',
+          'moves': [
+            'Rock Tomb',
+            'Mud Shot',
+            'Yawn',
+            'Water Pulse',
+          ],
+        },
+        {
+          'name': 'Floatzel',
+          'level': 'Lv. 37',
+          'image': 'assets/floatzel.png',
+          'moves': [
+            'Aqua Jet',
+            'Brine',
+            'Ice Fang',
+            'Crunch',
+          ],
+        }
+      ],
     },
 
     'Byron': {
       'type': 'STEEL TYPE',
       'leaderImage': 'assets/byron.png',
-      'pokemon': [],
+      'pokemon': [
+        {
+          'name': 'Magneton',
+          'level': 'Lv. 37',
+          'image': 'assets/magneton.png',
+          'moves': [
+            'Flash Cannon',
+            'Tri Attack',
+            'Thunderbolt',
+            'Metal Sound',
+          ],
+        },
+        {
+          'name': 'Steelix',
+          'level': 'Lv. 38',
+          'image': 'assets/steelix.png',
+          'moves': [
+            'Earthquake',
+            'Sandstorm',
+            'Flash Cannon',
+            'Ice Fang',
+          ],
+        },
+        {
+          'name': 'Bastiodon',
+          'level': 'Lv. 41',
+          'image': 'assets/bastiodon.png',
+          'moves': [
+            'Iron Defense',
+            'Metal Burst',
+            'Stone Edge',
+            'Taunt',
+          ],
+        }
+      ],
     },
 
     'Candice': {
       'type': 'ICE TYPE',
       'leaderImage': 'assets/candice.png',
-      'pokemon': [],
+      'pokemon': [
+        {
+          'name': 'Piloswine',
+          'level': 'Lv. 38',
+          'image': 'assets/piloswine.png',
+          'moves': [
+            'Earthquake',
+            'Avalanche',
+            'Hail',
+            'Stone Edge',
+          ],
+        },
+        {
+          'name': 'Sneasel',
+          'level': 'Lv. 40',
+          'image': 'assets/sneasel.png',
+          'moves': [
+            'Ice Shard',
+            'Feint Attack',
+            'Slash',
+            'Aerial Ace',
+          ],
+        },
+        {
+          'name': 'Abomasnow',
+          'level': 'Lv. 42',
+          'image': 'assets/abomasnow.png',
+          'moves': [
+            'Wood Hammer',
+            'Focus Blast',
+            'Avalanche',
+            'Water Pulse',
+          ],
+        },
+        {
+          'name': 'Froslass',
+          'level': 'Lv. 44',
+          'image': 'assets/froslass.png',
+          'moves': [
+            'Blizzard',
+            'Shadow Ball',
+            'Psychic',
+            'Double Team',
+          ],
+        }
+      ],
     },
 
     'Volkner': {
       'type': 'ELECTRIC TYPE',
       'leaderImage': 'assets/volkner.png',
-      'pokemon': [],
+      'pokemon': [
+        {
+          'name': 'Jolteon',
+          'level': 'Lv. 46',
+          'image': 'assets/jolteon.png',
+          'moves': [
+            'Charge Beam',
+            'Thunder Wave',
+            'Iron Tail',
+            'Quick Attack',
+          ],
+        },
+        {
+          'name': 'Raichu',
+          'level': 'Lv. 46',
+          'image': 'assets/raichu.png',
+          'moves': [
+            'Charge Beam',
+            'Signal Beam',
+            'Focus Blast',
+            'Quick Attack',
+          ],
+        },
+        {
+          'name': 'Luxray',
+          'level': 'Lv. 48',
+          'image': 'assets/luxray.png',
+          'moves': [
+            'Thunder Fang',
+            'Ice Fang',
+            'Fire Fang',
+            'Crunch',
+          ],
+        },
+        {
+          'name': 'Electivire',
+          'level': 'Lv. 50',
+          'image': 'assets/electivire.png',
+          'moves': [
+            'Thunder Punch',
+            'Giga Impact',
+            'Quick Attack',
+            'Fire Punch',
+          ],
+        }
+      ],
     },
   };
 
