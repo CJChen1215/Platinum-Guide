@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'gym_screen.dart';
 import 'starter_screen.dart';
 import 'pokemon_league_screen.dart';
+import 'legendary_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -49,15 +50,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => const LeagueScreen(), 
                       ), 
                     ); 
-                  } 
-                  //else if (index == 1) { 
-                  //Navigator.push( 
-                    //context, MaterialPageRoute( 
-                    //  builder: (context) => const LegendaryScreen(), 
-                    //  ), 
-                   // ); 
-                 // } 
-                    else if (index == 2) { 
+                  } else if (index == 1) { 
+                  Navigator.push( 
+                    context, MaterialPageRoute( 
+                      builder: (context) => const LegendaryScreen(), 
+                      ), 
+                    ); 
+                  } else if (index == 2) { 
                     // Already on Home 
                   } else if (index == 3) { 
                   Navigator.push( 

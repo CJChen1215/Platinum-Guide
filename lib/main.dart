@@ -5,6 +5,7 @@ import 'home_screen.dart';
 import 'gym_screen.dart';
 import 'pokemon_league_screen.dart';
 import 'starter_screen.dart';
+import 'legendary_screen.dart';
 
 void main() {
   runApp(
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         '/home': (context) => const HomeScreen(),
         '/league': (context) => const LeagueScreen(),
         '/starter': (context) => const StarterScreen(),
-        //'/legendary': (context) => const LegendaryScreen(),
+        '/legendary': (context) => const LegendaryScreen(),
         '/gym': (context) => const GymScreen(),
       },
     );

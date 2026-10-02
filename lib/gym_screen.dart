@@ -4,6 +4,7 @@ import 'home_screen.dart';
 import 'gym_leader_team_screen.dart';
 import 'starter_screen.dart';
 import 'pokemon_league_screen.dart';
+import 'legendary_screen.dart';
 
 
 class GymScreen extends StatefulWidget {
@@ -184,14 +185,13 @@ class _GymScreenState extends State<GymScreen> {
                   builder: (context) => const LeagueScreen(), 
                   ), 
                 ); 
-              } //else if (index == 1) {
-             // Navigator.push( 
-               // context, MaterialPageRoute( 
-                //  builder: (context) => const LegendaryScreen(), 
-                // ), 
-                //); 
-             // } 
-              else if (index == 2) { 
+              } else if (index == 1) {
+                Navigator.push( 
+                  context, MaterialPageRoute( 
+                    builder: (context) => const LegendaryScreen(), 
+                  ), 
+                ); 
+              } else if (index == 2) { 
                 Navigator.push(context, MaterialPageRoute( 
                   builder: (context) => const HomeScreen(), 
                   ), 
