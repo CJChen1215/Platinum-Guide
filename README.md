@@ -15,8 +15,6 @@
 
 ## Screenshots
 
-Put two or three real screenshots at phone size in `docs/assets/`, then replace
-this paragraph with them:
 | Home | Starter | Gym |
 | --- | --- | --- | 
 | ![Home](docs/assets/Home.png) | ![Starter](docs/assets/Starter.png) | ![Gym](docs/assets/Gym.png) |
