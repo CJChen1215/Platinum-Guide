@@ -42,6 +42,12 @@ class _LegendaryScreenState extends State<LegendaryScreen> {
       'image': 'assets/mesprit.png',
       'level': 'Lv. 50',
     },
+    {
+      'location': 'Old Chateau',
+      'name': 'Rotom',
+      'image': 'assets/rotom.png',
+      'level': 'Lv. 20',
+    },
   ];
 
   // =========================
@@ -72,6 +78,24 @@ class _LegendaryScreenState extends State<LegendaryScreen> {
       'name': 'Regigigas',
       'image': 'assets/regigigas.png',
       'level': 'Lv. 1',
+    },
+    {
+      'location': 'Route 228',
+      'name': 'Regirock',
+      'image': 'assets/regirock.png',
+      'level': 'Lv. 30',
+    },
+    {
+      'location': 'Iron Island',
+      'name': 'Registeel',
+      'image': 'assets/registeel.png',
+      'level': 'Lv. 30',
+    },
+    {
+      'location': 'Mt. Coronet',
+      'name': 'Regice',
+      'image': 'assets/regice.png',
+      'level': 'Lv. 30',
     },
     {
       'location': 'Fullmoon Island (Roaming)',

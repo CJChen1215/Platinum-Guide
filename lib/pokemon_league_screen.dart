@@ -4,6 +4,7 @@ import 'home_screen.dart';
 import 'gym_screen.dart';
 import 'starter_screen.dart';
 import 'legendary_screen.dart';
+import 'pokemon_league_team_screen.dart';
 
 class LeagueScreen extends StatefulWidget {
   const LeagueScreen({super.key});
@@ -24,11 +25,11 @@ class _LeagueScreenState extends State<LeagueScreen> {
   ];
 
   final List<String> leagueBanners = [
-    'assets/aaron.png',
-    'assets/bertha.png',
-    'assets/flint.png',
-    'assets/lucian.png',
-    'assets/cynthia.png',
+    'assets/aaron1.png',
+    'assets/bertha1.png',
+    'assets/flint1.png',
+    'assets/lucian1.png',
+    'assets/cynthia1.png',
   ];
 
   @override
@@ -59,9 +60,15 @@ class _LeagueScreenState extends State<LeagueScreen> {
                   itemCount: leagueBanners.length,
                   itemBuilder: (context, index) {
                     return GestureDetector(
-                      onTap: () {
-                        // Team preview will be added here later.
-                      },
+                      onTap: () { 
+                        Navigator.push( 
+                          context, MaterialPageRoute( 
+                            builder: (context) => PokemonLeagueTeamScreen( 
+                              memberName: leagueNames[index], 
+                              ), 
+                            ), 
+                          ); 
+                        },
                       child: Container(
                         margin: const EdgeInsets.only(bottom: 8),
                         decoration: BoxDecoration(
