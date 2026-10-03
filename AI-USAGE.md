@@ -9,7 +9,7 @@
 * **What it gave back:** It suggested the Flutter structure for the screen, including `Scaffold`, `Stack`, `Image.asset`, and the bottom navigation.
 * **What I kept, what I changed, and why:** I used the suggestions as a starting point, but I chose the actual layout, colors, images, logo position, and navigation that matched my project. I also adjusted the asset paths to match my own files.
 * **File:** `lib/home_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/2bf15ad1bd7dcd5811d9f91b986dcdd0c8af715c#diff-e61eb31d013d12616f5532636a88cfa63631dda8f7829e5424e68542214d1608
 
 ### 2026-09-24 - Gym Leaders Screen
 
@@ -18,7 +18,7 @@
 * **What it gave back:** It suggested using `GridView.builder` for the eight Gym badges and showed how to connect the badge images to the screen.
 * **What I kept, what I changed, and why:** I did most of the design decisions myself, including the two-column layout, colors, badge assets, spacing, borders, and overall appearance. I used AI mainly to help with the Flutter structure and navigation.
 * **File:** `lib/gym_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/b1f328e045efdb23b1daf1a8e3b698e9a7a88759
 
 ### 2026-09-25 - Gym Leader Team Preview
 
@@ -27,7 +27,7 @@
 * **What it gave back:** It suggested using one `GymLeaderTeamScreen` and passing the selected leader's name to it.
 * **What I kept, what I changed, and why:** I kept the idea of using one screen because it makes the project easier to manage. I added and adjusted the actual leader information, Pokémon information, images, layout, text sizes, scrolling, and back button based on my design.
 * **File:** `lib/gym_leader_team_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/b1f328e045efdb23b1daf1a8e3b698e9a7a88759
 
 ### 2026-09-26 - Pokémon League Screen
 
@@ -35,8 +35,8 @@
 * **What I asked for:** I asked for help turning my Pokémon League mockup into a Flutter screen.
 * **What it gave back:** It suggested a scrollable list for the five League members and showed how to display their banner images.
 * **What I kept, what I changed, and why:** I kept my original mockup design and decided how the banners, colors, spacing, and navigation should look. I mainly used AI for the Flutter implementation and troubleshooting.
-* **File:** `lib/league_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **File:** `lib/pokemon_league_screen.dart`
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/e6f76bbfcfc6bc099dfa52afdd84daf2c08fd3a5#diff-4cdf4f1d4dcc065948b529fa978a7e9d68fbd661652265d9bffed29151da6ef9
 
 ### 2026-09-29 - Starter Screen
 
@@ -45,7 +45,7 @@
 * **What it gave back:** It suggested a scrollable layout with starter information and reusable evolution rows.
 * **What I kept, what I changed, and why:** I chose the actual content, Pokémon images, colors, layout, descriptions, and overall design from my mockup. I also made sure the old five-icon navigation bar was kept instead of changing the navigation design.
 * **File:** `lib/starter_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/b1f328e045efdb23b1daf1a8e3b698e9a7a88759#diff-b28d5ac723a7613fc69175235d081987c8733e6c9d3f0ec41628f8b18e574aef
 
 ### 2026-10-02 - Legendary Encounters Screen
 
@@ -54,7 +54,7 @@
 * **What it gave back:** It suggested using lists of Legendary Pokémon and a reusable card widget for displaying the location, name, level, and image.
 * **What I kept, what I changed, and why:** I decided how the Legendary Pokémon should be grouped and arranged in my guide. I specifically moved Heatran and Regigigas into the After Getting National Pokédex section to match my planned guide structure. I also kept the original five-icon navigation bar.
 * **File:** `lib/legendary_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/4703e6e0f2912a62fe5ab3dd80da57d19ca29529
 
 ## 2. Where the AI Got It Wrong
 
@@ -64,7 +64,7 @@
 * **What was wrong with it:** The layout caused a Flutter rendering/layout problem because the widget did not have the correct height constraints.
 * **What I did instead:** I changed the team section to a `Column` and displayed the Pokémon using a loop. I tested the change until the team preview displayed correctly.
 * **File:** `lib/gym_leader_team_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/b1f328e045efdb23b1daf1a8e3b698e9a7a88759#diff-f8f549de8198ce90093772276a723e0ae2817fe74a34fe084452c497ba4f843c
 
 ### Case 2 - Invalid Constant Value
 
@@ -72,7 +72,7 @@
 * **What was wrong with it:** `gymNames[index]` is determined while the program is running, so it cannot be used as a constant.
 * **What I did instead:** I removed `const` from that part of the navigation code and tested the screen again.
 * **File:** `lib/gym_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/88aba849704828dbbfa4cd67d54cdc0e91ac6de8
 
 ### Case 3 - Undefined `gymNames`
 
@@ -80,18 +80,18 @@
 * **What was wrong with it:** Flutter reported that `gymNames` was undefined.
 * **What I did instead:** I created the `gymNames` list myself and made sure its order matched the eight Gym badge images. I then tested each badge to make sure it opened the correct leader.
 * **File:** `lib/gym_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/88aba849704828dbbfa4cd67d54cdc0e91ac6de8
 
 ## 3. Who Wrote What
 
 ### Written by me
 
-* **Files:** `lib/home_screen.dart`, `lib/gym_screen.dart`, `lib/gym_leader_team_screen.dart`, `lib/league_screen.dart`, `lib/starter_screen.dart`, `lib/legendary_screen.dart`
+* **Files:** `lib/home_screen.dart`, `lib/gym_screen.dart`, `lib/gym_leader_team_screen.dart`, `lib/pokemon_league_screen.dart`, `lib/starter_screen.dart`, `lib/legendary_screen.dart`, `lib/pokemon_league_team_screen.dart`
 * **Commit:** See the individual commits for each screen above.
 * **What it does and why it is built this way:** I was responsible for putting the project together and making the screens match my wireframes and mockups. I chose the screen layouts, colors, images, text, navigation order, and the way the Pokémon information is presented. I also connected the screens, organized the assets, tested the app, and fixed errors when the first version of the code did not work. I used AI as a programming assistant, but I made the decisions about how the final app should look and function.
 
 ### The AI-written part I understand best
 
 * **File:** `lib/gym_screen.dart`
-* **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/YOUR-SHA
+* **Commit:** https://github.com/CJChen1215/Platinum-Guide/commit/88aba849704828dbbfa4cd67d54cdc0e91ac6de8
 * **What it does and why we kept it:** This screen displays the eight Sinnoh Gym badges in a two-column grid. The `gymBadges` list stores the image paths, while the `gymNames` list stores the corresponding Gym Leader names. The `GridView.builder` uses the index to match each badge with its leader. When a badge is pressed, the selected leader name is passed to `GymLeaderTeamScreen`. I understand this part because I tested the navigation myself and fixed the errors that appeared while connecting the badge screen to the team preview.
