@@ -1,7 +1,9 @@
 # Demo video
 
-**File:** `demo.mp4` in this folder, or the hosted link (see below)
+![demo](docs/assets/Demo Video.mp4)
+
 **Length:** aim for 3 to 5 minutes
+
 **Recorded on:** the device you used
 
 ## What it shows
