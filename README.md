@@ -1,19 +1,12 @@
-<!--
-  This is your project's front page. Replace every placeholder below.
-  It is the first thing your instructor and any future employer will read, and
-  the live link in it is how your project gets opened for grading.
-
-  New here? Read START-HERE.md first. Delete this comment when you are done.
--->
-
-# App Name
+[![Made with AI](https://img.shields.io/badge/Made_with-AI_assistance-blue)](AI-USAGE.md)
+# Platinum-Guide
 
 > One sentence: what this app does, and who it is for.
 
 **Live demo:** https://YOURUSERNAME.github.io/YOUR-REPO/ <!-- GitHub Pages is set up already; replace if you host elsewhere -->
 **Demo video:** `docs/demo.mp4` (link it here once it exists)
 **Course:** Applications Development and Emerging Technologies (6ADET), Holy Angel University
-**Author:** Your Name
+**Author:** Chen, Edmund Cjiawei JR R.
 
 This repository lives in the author's own GitHub account and is public on
 purpose. There is no `student.json` here and there should not be one: see
@@ -26,22 +19,17 @@ personal data.
 
 Put two or three real screenshots at phone size in `docs/assets/`, then replace
 this paragraph with them:
-
-```markdown
-| Home | Detail | Add |
-| --- | --- | --- |
-| ![Home](docs/assets/screen-home.png) | ![Detail](docs/assets/screen-detail.png) | ![Add](docs/assets/screen-add.png) |
-```
-
-A repo without screenshots reads as abandoned, whatever the code says.
+| Home | Starter | Gym |
+| --- | --- | --- | 
+| ![Home](docs/assets/Home.png) | ![Starter](docs/assets/Starter.png) | ![Gym](docs/assets/Gym.png) |
 
 ## What it does
 
-Three to five bullets. What can a user actually do?
-
-- ...
-- ...
-- ...
+- View information about the three Pokémon starters.
+- Find Legendary Pokémon and where they can be encountered.
+- View all eight Sinnoh Gym Leaders and their Pokémon teams.
+- Check the Pokémon League members and their teams.
+- Use the app as a quick reference guide while playing Pokémon Platinum.
 
 ## Built with
 
@@ -63,26 +51,9 @@ flutter run -d web-server --web-port 8080
 Then open http://localhost:8080. Requires Flutter (run `flutter --version` and
 put yours here).
 
-### Environment variables
-
-This project reads its configuration from a `.env` file that is **not** in the
-repository. Copy `.env.example`, fill in your own values, and never commit the
-result.
-
-| Variable | What it is | Where to get one |
-| --- | --- | --- |
-| `EXAMPLE_API_KEY` | ... | ... |
-
 ## Privacy and secrets
 
-Required section. Two or three honest sentences:
-
-- What personal data this app stores, if any, and where it goes.
-- Where the secrets live (`.env` locally, repository secrets in the deploy
-  workflow) and what protects the data on the service side (Firestore rules,
-  Supabase RLS, or "nothing leaves the device").
-- Confirm that all sample data, screenshots and the video contain **no real
-  personal information**.
+The app does not currently store any real personal data; any future progress data will stay on the user's device using shared_preferences. The app does not use API keys or other secrets, so nothing is stored in a .env file or repository secrets, and nothing leaves the device. All sample data, screenshots, and the presentation video contain no real personal information.
 
 ## Project documentation
 
@@ -98,22 +69,35 @@ Required section. Two or three honest sentences:
 
 ## Status and what is next
 
-Be honest. What works, what is half done, what you would build next. An honest
-"known issues" section reads better than a claim the reader disproves in thirty
-seconds.
+What works:
+
+- Home screen and bottom navigation work.
+- Starter, Legendary, Gym Leader, and Pokémon League screens are built.
+- Gym badges can open the correct Gym Leader team preview.
+- Team previews display Pokémon, levels, and moves.
+
+Half done / known issues:
+
+- Some navigation and layouts still need more testing.
+- Image assets still need to be organized and checked.
+- Progress saving with shared_preferences is not implemented yet.
+
+What is next:
+
+- Finish testing all screens and navigation.
+- Fix remaining layout or asset issues.
+- Add progress saving if there is enough time.
+- Improve the visual design and add Pokémon images where needed.
 
 ## Credits
 
 - Packages: see `pubspec.yaml`
-- Assets, icons, 3D models, sounds: name the author and the licence for each
-- People who helped, and how
+- Assets, icons, 3D models, sounds: [serbii.net](serebii.net) (For all of the information)
 
 ## AI use
 
-If you used AI tools while building this, say so in a sentence or two and say
-where. Honest disclosure is the standard in this course and increasingly outside
-it.
+I used AI tools as a coding assistant while building the app, mainly for Flutter code, navigation, layout, and debugging. I also reviewed, tested, and modified the generated code to fit my design and project requirements.
 
 ## Licence
 
-MIT, see [LICENSE](LICENSE). Change it if you want different terms.
+MIT, see [LICENSE](LICENSE). 
