@@ -1,42 +1,35 @@
-# Security and privacy
+# Security and Privacy
 
-This repository is public. Fill this in honestly and date it; it is checked as
-part of grading.
+This repository is public. I checked the project for security and privacy issues and made sure that no private credentials or personal information are included.
 
-**Last checked:** YYYY-MM-DD
+**Last checked:** 2026-10-03
 
 ## What this app stores
 
-| Data | Where it lives | Who can see it |
-| --- | --- | --- |
-| e.g. the user's task list | on the device (shared_preferences) | only that user |
+| **Data**                                          | **Where it lives**                   | **Who can see it**   |
+| ------------------------------------------------- | ------------------------------------ | -------------------- |
+| The user's last viewed guide section and position | On the device (`shared_preferences`) | Only that user       |
+| Pokémon guide information                         | Inside the app                       | Anyone using the app |
 
 ## Secrets
 
-- Values my app needs at run time: _(list the names, not the values)_
-- Where they live locally: `.env`, which is git-ignored
-- Where the deploy workflow gets them: repository secrets (Settings > Secrets
-  and variables > Actions; the walkthrough is on page 12 of
-  `content/extending-your-app/` in your workspace)
-- Anything my deployed web build carries that a visitor could read, and why that
-  is acceptable: _(a Supabase anon key protected by RLS, a Firebase config
-  protected by rules, or nothing)_
+* **Values my app needs at run time:** None
+* **Where they live locally:** Not applicable because the app currently does not use API keys or other secrets.
+* **Where the deploy workflow gets them:** Not applicable.
+* **Anything my deployed web build carries that a visitor could read, and why that is acceptable:** Nothing. The app does not currently use Firebase, Supabase, or an external API.
 
 ## What protects the data on the service side
 
-- Firestore rules / Supabase RLS policies: _(paste or summarize them; "test mode"
-  is not an answer)_
-- If nothing leaves the device, say that instead.
+Nothing leaves the device. The app does not currently use a backend service, Firebase, Supabase, or a database server. Any future user progress saved with `shared_preferences` will remain local to that user's device.
 
 ## Checklist
 
-- [ ] `.env` (or `env.json`) is in `.gitignore`, and `.env.example` is committed
-- [ ] `git log -p | grep -i "api_key\|secret\|password\|token"` finds nothing real
-- [ ] No service account file, keystore or `service_role` key anywhere in the repo
-- [ ] Security rules or RLS policies written and tested, not left open
-- [ ] No real personal data in sample data, screenshots or the video
-- [ ] No course or university credentials anywhere
-- [ ] Anyone whose data appears in a test was asked first
+* [x] `.env` or `env.json` is not needed because the app currently uses no secrets.
+* [x] No real API keys, passwords, tokens, or other credentials are included in the repository.
+* [x] No service account file, keystore, or `service_role` key is included in the repository.
+* [x] No security rules or RLS policies are needed because the app does not currently send data to a service.
+* [x] No real personal data is used in the app's sample data.
+* [x] No course or university credentials are included.
+* [x] No other person's private data is used in the app.
 
-If you found and revoked a key while doing this, say so here. Catching it is the
-right outcome, not an embarrassment.
+I did not find or revoke any leaked keys because the project does not currently use API keys or other secret values.
