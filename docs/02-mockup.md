@@ -1,14 +1,19 @@
-# Mockup and wireframes
-
-The visual plan for this app. Your wireframes answered what goes where; the
-mockup shows what it looks like.
-
 ## Mockup
 
-Put your mockup images or PDF in `assets/` and embed them here, one heading per
-screen.
+## Home
+![Home](assets/Home.png)
 
-![Mockup](assets/Mockup.pdf)
+## Starter
+![Starter](assets/Starter.png)
+
+## Gym
+![Gym](assets/Gym.png)
+
+## League
+![League](assets/League.png)
+
+## Legendary
+![Legendary](assets/Legendary.png)
 
 ## Wireframes
 
